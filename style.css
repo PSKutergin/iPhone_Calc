@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    position: relative;
+    top: 200px;
+}
+
+#screen {
+    height: 50px;
+    line-height: 50px;
+    text-align: end;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #9f9f9f;
+    border-radius: 40px;
+}
+
+#digits {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.digit {
+    border-radius: 50%;
+    background-color: #313131;
+    color: #f5f5f5;
+}
+
+#divide,
+#mult,
+#minus,
+#add,
+#enter {
+    background-color: #f69906;
+}
+
+#clear,
+#del,
+#raise {
+    background-color: #9f9f9f;
+    color: #000000;
+}
+
+#del span {
+    position: relative;
+    top: -2px;
+}
